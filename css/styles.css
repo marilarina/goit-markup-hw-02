@@ -15,7 +15,7 @@ body {
 a {
     text-decoration: none;
 }   
-ul {
+.list {
     list-style: none;
 } 
 .header-logo {
@@ -57,6 +57,7 @@ ul {
 .hero-title {
     font-size: 56px;
     line-height: 1.07;
+    letter-spacing: 0.02em;
     text-align: center;
     }
 .hero-btn {
@@ -93,20 +94,21 @@ ul {
     clip: rect(0 0 0 0);
     overflow: hidden;
   }
- .card-subtitle {
+ 
+.item-subtitle {
     font-weight: 500;
     font-size: 20px;
     line-height: 1.2;
     letter-spacing: 0.02em;
-    text-align: center;
     color: var(--title-color);
- }  
-.card-text {
+}
+
+.text {
     letter-spacing: 0.02em;
     line-height: 1.5;
-    text-align: center;
     color: var(--text-color);
 }
+
 .filter-button {
     font-family: 'Roboto';
     font-style: normal;
@@ -129,22 +131,22 @@ ul {
     background: var(--activebutton-background);
     color: var(--hero-color);
 }
-.team-cards {
-    background: var(--substrate-color);
-}
-.list-card {
+.card {
+    text-align: center;  
     background: var(--substrate-color);
     width: 264px;
+}
+.list .projects {
+    width: 360px;
+    letter-spacing: 0.02em;
+    line-height: 1.5;
+    background: var(--hero-color);
 }
 .list-item {
     align-items: center;
     background: var(--hero-color);
 }
-.list-projects {
-    letter-spacing: 0.02em;
-    line-height: 1.5;
-    width: 360;    
-}
+
 .project-subtitle {
     font-weight: 500;
     font-size: 20px;
@@ -153,6 +155,7 @@ ul {
     color: var(--title-color);
 }
 .project-text {
+    line-height: 1.5;
     letter-spacing: 0.02em;
     color: var(--text-color);
 }
@@ -176,6 +179,5 @@ footer {
     font-size: 16px;
     line-height: 1.5;
     letter-spacing: 0.02em;
-
     color: var(--accent-color);
 }
